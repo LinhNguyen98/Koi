@@ -25,7 +25,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="./ogani/img/hero/Koi.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -155,7 +155,7 @@
                             <li>VAT<span>10%</span></li>
                             <li>Total <span><?php $_SESSION['total'] = $_SESSION['tongtien']* 110/100; echo formatPrice($_SESSION['total']) ?></span></li>
                         </ul>
-                        <a href="/koi/thanh-toan.php" class="primary-btn">PROCEED TO CHECKOUT</a>
+                        <a href="/koi/payment.php" class="primary-btn">PROCEED TO CHECKOUT</a>
                     </div>
                 </div>
             </div>

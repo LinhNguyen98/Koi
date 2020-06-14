@@ -3,7 +3,7 @@
     require_once  "C:/xampp/htdocs/koi/autoload/autoload.php";
     if(!isset($_SESSION['name_id']))
     {
-        echo "<script> alert('Bạn phải đăng nhập mới thực hiện được chức năng này'); location.href='/koi/dang-nhap.php'</script>";   
+        echo "<script> alert('Bạn phải đăng nhập mới thực hiện được chức năng này'); location.href='/koi/sign-in.php'</script>";   
     }
     $user = $db -> fetchID("users",intval($_SESSION['name_id']));
 
@@ -33,7 +33,7 @@
             
 
             $_SESSION['success']= "Lưu thông tin đơn hàng thành công ! Chúng tôi sẽ liên hệ với bạn sớm nhất !";
-            header("location:thong-bao.php");
+            header("location:noti.php");
         }       
     }
      
@@ -50,7 +50,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="./ogani/img/hero/Koi.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

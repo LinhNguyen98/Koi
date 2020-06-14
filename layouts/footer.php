@@ -96,7 +96,7 @@
             $key = $(this).attr("data-key");
 
             $.ajax({
-                url: '/koi/cap-nhat-gio-hang.php',
+                url: '/koi/update-cart.php',
                 type: 'GET',
                 data: {'qty':$qty,'key':$key},
                 success:function(data)

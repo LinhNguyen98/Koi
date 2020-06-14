@@ -78,7 +78,7 @@
 
                 <button type="submit" class="btn btn-success col-md-2 col-md-offset-5" style="margin-bottom: 20px;">Đăng nhập</button>
                 <div style="">
-                    <a href="/koi/dang-ky.php">Nếu bạn chưa có tài khoản hãy đăng ký</a>
+                    <a href="/koi/sign-up.php">Nếu bạn chưa có tài khoản hãy đăng ký</a>
                 </div>
             </form>         
         </section>

@@ -122,13 +122,13 @@
 
                             <?php if(isset($_SESSION['name_user'])): ?>
                                  <div class="header__top__right__auth">
-                                    <a href="./thoat.php"><i class="fa fa-share-square-o"></i> Thoát</a>
+                                    <a href="./sign-out.php"><i class="fa fa-share-square-o"></i> Thoát</a>
                                 </div>
                                 
 
                             <?php else : ?>
                                 <div class="header__top__right__auth">
-                                    <a href="./dang-nhap.php"><i class="fa fa-user"></i> Login</a>
+                                    <a href="./sign-in.php"><i class="fa fa-user"></i> Login</a>
                                 </div>
                             <?php endif ; ?>
                         </div>
