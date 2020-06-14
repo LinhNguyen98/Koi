@@ -34,7 +34,7 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="red" data-image="/koi/Public/admin/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="linh" data-image="/koi/Public/admin/img/sidebar-5.jpg">
 
     <!--
 

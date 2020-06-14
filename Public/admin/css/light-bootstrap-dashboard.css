@@ -464,6 +464,7 @@ input:focus {
     background-size: 150% 150%;
 }
 
+
 .sidebar[data-color="green"]:after {
     background: #87CB16;
     background: -moz-linear-gradient(top, #87CB16 0%, #6dc030 100%);
