@@ -63,7 +63,7 @@
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img src="<?php echo uploads() ?>product/<?php echo $value['thunbar'] ?>" width="80px" height="80px">
-                                        <h5><?php echo $value['name'] ?></h5>
+                                        <h5 style="font-family: Arial"><?php echo $value['name'] ?></h5>
                                     </td>
                                     <td class="shoping__cart__price">
                                         <?php echo formatPrice($value['price']) ?>

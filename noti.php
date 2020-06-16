@@ -38,7 +38,7 @@
                     <div class="col-md-9 bor">
                         
                         <section class="box-main1">
-                            <h3 class="title-main"><a href=""> Thông báo thanh toán</a> </h3>
+                            <h3 style="font-family: Arial" class="title-main"><a href=""> Thông báo thanh toán</a> </h3>
                             <?php if (isset($_SESSION['success'])): ?>
                                 <div class="alert alert-success">
                                     <strong>Success!</strong> <?php echo $_SESSION['success'] ; unset($_SESSION['success'])?>

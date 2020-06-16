@@ -66,7 +66,7 @@
             if($idinert > 0)
             {
                 $_SESSION['success']="Đăng ký thành công. Mời bạn đăng nhập!";
-                header("location: dang-nhap.php");
+                header("location: sign-in.php");
 
             }
             else
@@ -85,7 +85,7 @@
             <h3 class="title-main"><a href=""> Đăng ký thành viên</a> </h3>
             <form action="" method="POST" class="form-horizontal formcustom" style="margin-top:20px" >
                 <div class="form-group">
-                    <label class="col-md-2 col-md-offset-1">Tên thành viên</label>
+                    <label class="col-md-2 col-md-offset-1">Tên thành viên</label>  
                     <div class="col-md-8">
                         <input type="text" name="name" placeholder="" class="form-control" value="<?php echo $data['name'] ?>">     
                         <?php if(isset($error['name'])): ?>

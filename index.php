@@ -12,7 +12,7 @@
         {
 
             $cateId = intval($item['id']);
-            $sql = "SELECT * FROM product WHERE category_id = $cateId LIMIT 3";
+            $sql = "SELECT * FROM product WHERE category_id = $cateId LIMIT 4";
             $ProductHome = $db->fetchsql($sql);
             $data[$item['name']]= $ProductHome;
         
@@ -24,10 +24,10 @@
     <?php require_once  "C:/xampp/htdocs/koi/layouts/header.php";  ?>
     
                     <div class="hero__item set-bg" data-setbg="/koi/ogani/img/hero/Koi.jpg" >
-                        <div class="hero__text">
+                        <div style="font-family: Arial" class="hero__text">
                             <span style="color: green">HUTECH</span>
-                            <h2 style="color: green  ">CÁ KOI XỊN <br />100% CÁ NHẬP</h2>
-                            <p style="color: green">FREESHIP KHU VỰC Q9</p>
+                            <h2 style=" font-family: Arial; color: green  ">CÁ KOI XỊN <br />100% CÁ NHẬP</h2>
+                            <p style="font-family: Arial; color: green">FREESHIP KHU VỰC Q9</p>
                             <a href="/koi/shop-grid.php?id=26" class="primary-btn">SHOP NOW</a>
                         </div>
                     </div>
@@ -43,12 +43,11 @@
                 <div class="categories__slider owl-carousel">
 
                     <?php foreach($category as $item) :?>
-                        <!-- <li><a href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a></li> -->
+                        
                         <div class="col- lg-3" >
-                            <div class="categories__item set-bg" data-setbg="/koi/public/uploads/category/<?php echo $item['thunbar'] ?>" style="width: 90%">
+                            <div   class="categories__item set-bg" data-setbg="/koi/public/uploads/category/<?php echo $item['thunbar'] ?>" style=" width: 90%">
                                 
-                            </style>>
-                                <h5><a href="/koi/shop-grid.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a><?php echo $item['name'] ?></a></h5>
+                                <h5 style="font-family: Arial"><a href="/koi/shop-grid.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a></a></h5>
                             </div>
                         </div>
                     <?php endforeach; ?> 
@@ -57,8 +56,7 @@
             </div>
         </div>
     </section>
-
-    <section class="featured spad">
+    <section  class="featured spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -70,11 +68,11 @@
             <div class="row featured__filter">               
                 <?php foreach ($productNew as $item):  ?>
                     <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                        <div class="featured__item">
+                        <div  class="featured__item">
                             <a href="/koi/product-details.php?id=<?php echo $item['id'] ?>">
                                 <img src="/koi/public/uploads/product/<?php echo $item['thunbar'] ?>" class="featured__item__pic set-bg" >
                                      <div class="featured__item__text"> 
-                                        <h6><a href="/koi/product-details.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a></h6>
+                                        <h6 style="font-family: Arial" ><a  href="/koi/product-details.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a></h6>
                                         <h5><?php echo formatprice($item['price']) ?></h5>
                                     </div> 
                             </a>
@@ -84,38 +82,39 @@
             </div>
         </div>
     </section>
-
-    <section class="featured spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Top Rate Product</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row featured__filter">
-               
-                <?php foreach ($productPay as $item):  ?>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                        <div class="featured__item">
-                            <a href="/koi/product-details.php?id=<?php echo $item['id'] ?>">
-                                <img src="/koi/public/uploads/product/<?php echo $item['thunbar'] ?>" class="featured__item__pic set-bg" >
-                                     <div class="featured__item__text"> 
-                                        <h6><a href="/koi/product-details.php?id=<?php echo $item['id'] ?>"><?php echo $item['name'] ?></a></h6>
-                                        <h5><?php echo formatprice($item['price']) ?></h5>
-                                    </div>
-
-                            </a>
+    <?php foreach ($data as $key => $value): ?>
+        <section class="featured spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div  class="section-title">
+                            <h2 style="font-family: Arial" > <a style=" color:black" href="/koi/shop-grid.php?id=<?php echo $item['category_id'] ?>"><?php echo $key ?></a></h2>
                         </div>
                     </div>
-                <?php endforeach ?>    
+                </div>
+                <div class="row featured__filter">
+                   
+                    <?php foreach ($value as $item): ?>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="/koi/product-details.php?id=<?php echo $item['id'] ?>">
+                                    <img src="/koi/public/uploads/product/<?php echo $item['thunbar'] ?>" class="featured__item__pic set-bg" >
+                                         <div class="featured__item__text"> 
+                                            <h6><a href="/koi/product-details.php?id=<?php echo $item['id'] ?>"><?php echo $item['name']?></a></h6>
+                                            <h5><?php echo formatprice($item['price']) ?></h5>
+                                        </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    <?php endforeach ?>    
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endforeach ?> 
 
    
-    <section class="from-blog spad">
+   <!--  <section class="from-blog spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -162,7 +161,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     <!-- Blog Section End -->
 

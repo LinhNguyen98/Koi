@@ -22,6 +22,6 @@
 		{
 			$_SESSION['cart'][$id]['qty'] +=1;
 		}
-	echo "<script> location.href='/koi/gio-hang.php'</script>";
+	echo "<script> location.href='/koi/cart.php'</script>";
 	}
 ?> 

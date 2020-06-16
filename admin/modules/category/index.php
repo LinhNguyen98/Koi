@@ -94,7 +94,7 @@
                 		
             		</tbody>
     	 		</table>
-    	       	<div class="pull-right">
+    	       	<!-- <div class="pull-right">
     				<nav aria-label="Page navigation example">
         				<ul class="pagination">
             				<li class="page-item">
@@ -102,7 +102,7 @@
                 				<span aria-hidden="true">&laquo;</span>
                 				</a>	
             				</li>
-            				<!-- <?php for($i =1; $i <= $sotrang; $i++): ?>
+            				 <?php for($i =1; $i <= $sotrang; $i++): ?>
                                 <?php 
                                 if(isset($_GET['page']))
                                 {
@@ -117,7 +117,7 @@
                                 <li class="<?php echo ($i == $p) ? 'active' : '' ?>">
                                     <a href="?page=<?php echo $i ;?>"><?php echo $i; ?></a>
                                 </li>
-                            <?php endfor; ?> -->
+                            <?php endfor; ?> 
             				<li class="page-item">
                 				<a class="page-link" href="#" aria-label="Next">
                 					<span aria-hidden="true">&raquo;</span>
@@ -125,7 +125,7 @@
             				</li>
         				</ul>
     				</nav>			
-    			</div>	 
+    			</div> -->	 
     		</div>
         </div>
     </div>

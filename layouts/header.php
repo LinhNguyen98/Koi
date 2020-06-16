@@ -7,7 +7,7 @@
         <meta name="keywords" content="Ogani, unica, creative, html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ogani | Template</title>
+        <title>Koi | Template</title>
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -121,8 +121,11 @@
 
 
                             <?php if(isset($_SESSION['name_user'])): ?>
+                                <a >Xin chào <?php echo $_SESSION['name_user'] ?></a>
                                  <div class="header__top__right__auth">
-                                    <a href="./sign-out.php"><i class="fa fa-share-square-o"></i> Thoát</a>
+
+                                    <a href="./sign-out.php"><i class="fa fa-share-square-o"></i> Thoát
+                                    </a>
                                 </div>
                                 
 

@@ -6,18 +6,18 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="/koi/ogani/img/logo.png" alt=""></a>
+                            <a ><img src="/koi/ogani/img/pngflow.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Address: Lô E1, Phân khu đào tạo E1, Khu Công Nghệ cao TP.HCM, Phường Hiệp Phú, Quận 9, TP.HCM. </li>
+                            <li>Phone: 000000000</li>
+                            <li>Email: abc@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Useful Links</h6>
+<!--                         <h6>Useful Links</h6>
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">About Our Shop</a></li>
@@ -33,36 +33,14 @@
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Innovation</a></li>
                             <li><a href="#">Testimonials</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                    <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
-                        </form>
-                        <div class="footer__widget__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62700.39093586778!2d106.71487534375997!3d10.828566615476976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c3debb5aad%3A0x5fb58956eb4194d0!2zxJDhuqFpIEjhu41jIEh1dGVjaCBLaHUgRQ!5e0!3m2!1svi!2s!4v1592285949046!5m2!1svi!2s" width="450" height="300" frameborder="0" style="border:0;" ></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    <div class="footer__copyright__payment"><img src="/koi/ogani/img/payment-item.png" alt=""></div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </footer>
@@ -104,7 +82,7 @@
                     if(data == 1)
                     {
                         alert("Cập nhật giỏ hàng thành công");
-                        location.href='gio-hang.php';
+                        location.href='cart.php';
                     }
                     else(data == 0)
                     {

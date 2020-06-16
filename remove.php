@@ -5,5 +5,5 @@
 	 unset($_SESSION['cart'][$key]);
 
 	 $_SESSION['success'] = "Xóa sản phẩm trong giỏ hàng thành công!!!!";
-	 header("location: /koi/gio-hang.php");
+	 header("location: /koi/cart.php");
  ?>

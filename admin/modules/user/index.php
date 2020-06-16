@@ -69,9 +69,7 @@
                                 <td><?php echo $item['email'] ?></td>
                                 <td><?php echo $item['phone'] ?></td>
                                 <td>
-                                    <a class="btn btn-xs btn-info" href="detail.php?id=<?php echo $item['id'] ?>">
-                                        <i class="fa fa-info" > Chi tiết</i>
-                                    </a>
+                                   
                                     <a class="btn btn-xs btn-danger" href="delete.php?id=<?php echo $item['id'] ?>">
                                         <i class="fa fa-times"></i>Xóa 
                                     </a>
